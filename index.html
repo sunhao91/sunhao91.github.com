@@ -531,24 +531,20 @@
             <blockquote>
 <p>本文环境：<br>系统 macOS Sierra<br>软件包管理 homebrew</p>
 </blockquote>
-<p>##关于 pyenv</p>
-<p>一般在操作系统中我们会安装多个Python版本，在Linux系统中一般默认就自带了Python2与Python3两个版本，所以在进行Python版本切换时会比较麻烦，<strong>pyenv</strong>就提供了一种简单的方式。</p>
+<h2 id="关于-pyenv"><a href="#关于-pyenv" class="headerlink" title="关于 pyenv"></a>关于 pyenv</h2><p>一般在操作系统中我们会安装多个Python版本，在Linux系统中一般默认就自带了Python2与Python3两个版本，所以在进行Python版本切换时会比较麻烦，<strong>pyenv</strong>就提供了一种简单的方式。</p>
 <p>pyenv是一个能简易地在多个Python版本中进行切换的工具，它简单而优雅。</p>
-<p>###pyenv有以下功能：</p>
-<ul>
+<h3 id="pyenv有以下功能："><a href="#pyenv有以下功能：" class="headerlink" title="pyenv有以下功能："></a>pyenv有以下功能：</h3><ul>
 <li>进行全局的Python版本切换</li>
 <li>为单个项目提供对应的Python版本</li>
 <li>使用环境变量能让你重写Python版本</li>
 <li>能在同一时间在不同版本间进行命令搜索</li>
 </ul>
-<p>##安装</p>
-<p><strong>安装</strong><code>brew install pyenv</code><br><strong>环境变量</strong> <code>echo &#39;eval &quot;$(pyenv init -)&quot;&#39; &gt;&gt; ~/.bash_profile</code>  </p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><strong>安装</strong><code>brew install pyenv</code><br><strong>环境变量</strong> <code>echo &#39;eval &quot;$(pyenv init -)&quot;&#39; &gt;&gt; ~/.bash_profile</code>  </p>
 <p><strong>可能出现错误:</strong></p>
 <blockquote>
 <p>zipimport.ZipImportError: can’t decompress data; zlib not available<br>键入<code>brew install zlib</code>? 可惜的是提示zlib找不到<br>解决办法<a href="https://stackoverflow.com/a/26912010" target="_blank" rel="external"><code>xcode-select --install</code></a></p>
 </blockquote>
-<p>##基本功能</p>
-<ol>
+<h2 id="基本功能"><a href="#基本功能" class="headerlink" title="基本功能"></a>基本功能</h2><ol>
 <li><strong>可安装列表</strong>  <code>pyenv install --list</code></li>
 <li><strong>安装python</strong> <code>pyenv install xxx</code></li>
 <li><strong>已安装列表</strong> <code>pyenv versions</code></li>
