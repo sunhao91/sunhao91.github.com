@@ -76,7 +76,7 @@
 <meta property="og:url" content="http://www.sunhao.cc/2017/06/04/25/index.html">
 <meta property="og:site_name" content="一亩方田">
 <meta property="og:description" content="本文环境：系统 macOS Sierra软件包管理 homebrew  关于 pyenv一般在操作系统中我们会安装多个Python版本，在Linux系统中一般默认就自带了Python2与Python3两个版本，所以在进行Python版本切换时会比较麻烦，pyenv就提供了一种简单的方式。 pyenv是一个能简易地在多个Python版本中进行切换的工具，它简单而优雅。 pyenv有以下功能： 进行">
-<meta property="og:updated_time" content="2017-06-25T08:24:57.000Z">
+<meta property="og:updated_time" content="2017-06-25T08:36:32.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TensorFlow - 用 pyenv 管理你的python">
 <meta name="twitter:description" content="本文环境：系统 macOS Sierra软件包管理 homebrew  关于 pyenv一般在操作系统中我们会安装多个Python版本，在Linux系统中一般默认就自带了Python2与Python3两个版本，所以在进行Python版本切换时会比较麻烦，pyenv就提供了一种简单的方式。 pyenv是一个能简易地在多个Python版本中进行切换的工具，它简单而优雅。 pyenv有以下功能： 进行">
@@ -397,9 +397,7 @@
 <li>然后执行 pyenv install 版本号 安装对应的python版本</li>
 </ol>
 <p>一键安装</p>
-<blockquote>
-<p>v=”2.7.12”;wget <a href="http://mirrors.sohu.com/python/$v/Python-$v.tar.xz" target="_blank" rel="external">http://mirrors.sohu.com/python/$v/Python-$v.tar.xz</a> -P ~/.pyenv/cache/;pyenv install $v  </p>
-</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">v="2.7.12"; </div><div class="line">wget http://mirrors.sohu.com/python/$v/Python-$v.tar.xz -P ~/.pyenv/cache/; </div><div class="line">pyenv install $v</div></pre></td></tr></table></figure>
 
       
     </div>
