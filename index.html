@@ -552,6 +552,16 @@
 <li><strong>版本切换(全局)</strong> <code>pyenv global &lt;version&gt;</code></li>
 <li><strong>其他</strong> 键入<code>pyenv</code>自行查看</li>
 </ol>
+<h2 id="加速python"><a href="#加速python" class="headerlink" title="加速python"></a>加速python</h2><p>安装Python的时候，由于种种原因，速度很慢，想死的心都有。</p>
+<ol>
+<li>pyenv搜狐镜像源加速：<a href="http://mirrors.sohu.com/python/" target="_blank" rel="external">http://mirrors.sohu.com/python/</a></li>
+<li>下载需要的版本放到 ~/.pyenv/cache文件夹下面</li>
+<li>然后执行 pyenv install 版本号 安装对应的python版本</li>
+</ol>
+<p>一键安装</p>
+<blockquote>
+<p>v=”2.7.12”;wget <a href="http://mirrors.sohu.com/python/$v/Python-$v.tar.xz" target="_blank" rel="external">http://mirrors.sohu.com/python/$v/Python-$v.tar.xz</a> -P ~/.pyenv/cache/;pyenv install $v  </p>
+</blockquote>
 
           
         
