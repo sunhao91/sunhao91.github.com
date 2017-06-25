@@ -76,7 +76,7 @@
 <meta property="og:url" content="http://www.sunhao.cc/2016/05/06/18/index.html">
 <meta property="og:site_name" content="一亩方田">
 <meta property="og:description" content="之前用emlog，php的，很小也容易定制，但发现代码高亮，以及代码格式，已经到了我不能容忍的地步，🐟是乎像找个替代品，偶然发现jekyll ，哈哈😂，只想说，现在已经是凌晨 02:22 分，还是如此的兴奋\(≧▽≦)/ 。稍微做下对jekyll 安装的记录，以供以后使用">
-<meta property="og:updated_time" content="2016-05-23T14:05:47.000Z">
+<meta property="og:updated_time" content="2017-06-25T08:32:27.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jekyll小试🐂刀">
 <meta name="twitter:description" content="之前用emlog，php的，很小也容易定制，但发现代码高亮，以及代码格式，已经到了我不能容忍的地步，🐟是乎像找个替代品，偶然发现jekyll ，哈哈😂，只想说，现在已经是凌晨 02:22 分，还是如此的兴奋\(≧▽≦)/ 。稍微做下对jekyll 安装的记录，以供以后使用">
@@ -321,7 +321,18 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/jekyll/" itemprop="url" rel="index">
+                  <a href="/categories/blog/" itemprop="url" rel="index">
+                    <span itemprop="name">blog</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/blog/jekyll/" itemprop="url" rel="index">
                     <span itemprop="name">jekyll</span>
                   </a>
                 </span>
@@ -377,16 +388,16 @@
 <a id="more"></a>
 <h2 id="Jekyll-究竟是什么？"><a href="#Jekyll-究竟是什么？" class="headerlink" title="Jekyll 究竟是什么？"></a>Jekyll 究竟是什么？</h2><p>以下内容直接摘自原文，<a href="http://jekyllcn.com/docs/home/" target="_blank" rel="external">传送门</a></p>
 <p><strong>Jekyll</strong> 是一个简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过一个转换器（如 <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="external">Markdown</a>）和我们的 <a href="https://github.com/Shopify/liquid/wiki" target="_blank" rel="external">Liquid</a> 渲染器转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。Jekyll 也可以运行在 <a href="http://pages.github.com/" target="_blank" rel="external">GitHub Page</a> 上，也就是说，你可以使用 GitHub 的服务来搭建你的项目页面、博客或者网站，而且是完全免费的。</p>
-<h2 id="安装-这里只针对mac"><a href="#安装-这里只针对mac" class="headerlink" title="安装 (这里只针对mac)"></a>安装 (这里只针对mac)</h2><h2 id="事先准备"><a href="#事先准备" class="headerlink" title="事先准备"></a>事先准备</h2><p>安装 Jekyll 相当简单，但是你得先做好一些准备工作。开始前你需要确保你在系统里已经有如下配置。</p>
+<h2 id="安装-这里只针对mac"><a href="#安装-这里只针对mac" class="headerlink" title="安装 (这里只针对mac)"></a>安装 (这里只针对mac)</h2><h3 id="事先准备"><a href="#事先准备" class="headerlink" title="事先准备"></a>事先准备</h3><p>安装 Jekyll 相当简单，但是你得先做好一些准备工作。开始前你需要确保你在系统里已经有如下配置。</p>
 <ul>
 <li><a href="http://www.ruby-lang.org/en/downloads/" target="_blank" rel="external">Ruby</a>（including development headers, Jekyll 3 需要 v2 及以上版本）</li>
 <li><a href="http://rubygems.org/pages/download" target="_blank" rel="external">RubyGems</a></li>
 <li>Linux, Unix, or Mac OS X</li>
 </ul>
-<h2 id="Ruby安装"><a href="#Ruby安装" class="headerlink" title="Ruby安装"></a>Ruby安装</h2><p>mac 装了homebrew的，直接</p>
+<h3 id="Ruby安装"><a href="#Ruby安装" class="headerlink" title="Ruby安装"></a>Ruby安装</h3><p>mac 装了homebrew的，直接</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install ruby</div></pre></td></tr></table></figure>
 <p>别给我扯mac自带ruby，反正我没看啥版本，我也知道mac自带ruby，就没当回事，直接进入第二步，安装RubyGems，就埋下大坑。</p>
-<p>###RubyGems安装<br>官网有教程，不一一列举，我是：</p>
+<h3 id="RubyGems安装"><a href="#RubyGems安装" class="headerlink" title="RubyGems安装"></a>RubyGems安装</h3><p>官网有教程，不一一列举，我是：</p>
 <ol>
 <li>download个zip</li>
 <li>解压并<strong>cd</strong>到该目录下</li>
@@ -396,12 +407,12 @@
 <blockquote>
 <p><strong>注意：</strong>就是这里，我发现<strong>ruby setup.rb</strong> 安装不上，报错<strong>Operation not permitted</strong>，有点懵。百度了下，要我重启按住 Command+R，进入恢复模式，吓得有点傻眼，别装个小东西，搞出这么大动静啊。随手找我谷哥，还是我哥靠谱，提示俺brew 安装下Ruby就好。</p>
 </blockquote>
-<h2 id="jekyll安装（激动人心啊）"><a href="#jekyll安装（激动人心啊）" class="headerlink" title="jekyll安装（激动人心啊）"></a>jekyll安装（激动人心啊）</h2><p>终端 ==&gt; <strong>sudo gem install jekyll</strong> ，注意sudo! 注意sudo!注意sudo!</p>
+<h3 id="jekyll安装（激动人心啊）"><a href="#jekyll安装（激动人心啊）" class="headerlink" title="jekyll安装（激动人心啊）"></a>jekyll安装（激动人心啊）</h3><p>终端 ==&gt; <strong>sudo gem install jekyll</strong> ，注意sudo! 注意sudo!注意sudo!</p>
 <p>sudo注意了，还是没装上，妈蛋白激动了。报了个connect 失败，连接不上，被强了。翻墙？vpn速度太慢了，也不上长久之计啊。突然想到RubyGems说白了也就是包资源管理呗。他有张良计，我就有过墙梯。百度，RubyGems换源！</p>
-<h2 id="RubyGems镜像-–-淘宝"><a href="#RubyGems镜像-–-淘宝" class="headerlink" title="RubyGems镜像 – 淘宝"></a>RubyGems镜像 – 淘宝</h2><p>由于国内网络原因（你懂的），导致 rubygems.org 存放在 Amazon S3 上面的资源文件间歇性连接失败。<a href="https://ruby.taobao.org" target="_blank" rel="external">传送门</a></p>
+<h3 id="RubyGems镜像-–-淘宝"><a href="#RubyGems镜像-–-淘宝" class="headerlink" title="RubyGems镜像 – 淘宝"></a>RubyGems镜像 – 淘宝</h3><p>由于国内网络原因（你懂的），导致 rubygems.org 存放在 Amazon S3 上面的资源文件间歇性连接失败。<a href="https://ruby.taobao.org" target="_blank" rel="external">传送门</a></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gem sources --add https://ruby.taobao.org/ --remove https://rubygems.org/</div></pre></td></tr></table></figure>
 <p>再来，一次jekyll 安装，欧拉！</p>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>fork 了别人的项目，jekyll run的时候会报错，提示安装<a href="http://pygments.org/" target="_blank" rel="external">Pygments</a>，rdiscount<br>当时很纳闷，咋装呢，用啥子装么。。。</p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>fork 了别人的项目，jekyll run的时候会报错，提示安装<a href="http://pygments.org/" target="_blank" rel="external">Pygments</a>，rdiscount<br>当时很纳闷，咋装呢，用啥子装么。。。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">gem install pygments.rb</div><div class="line">gem install rdiscount</div></pre></td></tr></table></figure>
 <p>别骂我为啥没给一个非常正确的安装顺序，还让趟趟坑，趟坑才能记住些东西，我留下这篇日志也是为了未来少趟坑，睡啦。=_=</p>
 
@@ -556,7 +567,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">22</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -567,7 +578,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">41</span>
+                <span class="site-state-item-count">39</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -602,7 +613,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Jekyll-究竟是什么？"><span class="nav-number">1.</span> <span class="nav-text">Jekyll 究竟是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-这里只针对mac"><span class="nav-number">2.</span> <span class="nav-text">安装 (这里只针对mac)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事先准备"><span class="nav-number">3.</span> <span class="nav-text">事先准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ruby安装"><span class="nav-number">4.</span> <span class="nav-text">Ruby安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jekyll安装（激动人心啊）"><span class="nav-number">5.</span> <span class="nav-text">jekyll安装（激动人心啊）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RubyGems镜像-–-淘宝"><span class="nav-number">6.</span> <span class="nav-text">RubyGems镜像 – 淘宝</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-number">7.</span> <span class="nav-text">其他</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Jekyll-究竟是什么？"><span class="nav-number">1.</span> <span class="nav-text">Jekyll 究竟是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-这里只针对mac"><span class="nav-number">2.</span> <span class="nav-text">安装 (这里只针对mac)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#事先准备"><span class="nav-number">2.1.</span> <span class="nav-text">事先准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ruby安装"><span class="nav-number">2.2.</span> <span class="nav-text">Ruby安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RubyGems安装"><span class="nav-number">2.3.</span> <span class="nav-text">RubyGems安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jekyll安装（激动人心啊）"><span class="nav-number">2.4.</span> <span class="nav-text">jekyll安装（激动人心啊）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RubyGems镜像-–-淘宝"><span class="nav-number">2.5.</span> <span class="nav-text">RubyGems镜像 – 淘宝</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他"><span class="nav-number">2.6.</span> <span class="nav-text">其他</span></a></li></ol></li></ol></div>
             
 
           </div>
